@@ -132,12 +132,18 @@ table {
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #4F4B4B;
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: 'Bebas Neue', cursive;
+  color: #4E0505;
 }
 h1 {
   font-size: 3.5rem;
@@ -178,7 +184,7 @@ body {
   text-decoration: none;
   font-size: 2.5rem;
   font-family: 'Bebas Neue', cursive;
-  color: black;
+  color: #4E0505;
 }
 header .headerImg {
   width: 100%;
@@ -194,14 +200,22 @@ header p {
 .middleContent {
   padding-top: 3%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .middleContent .blocksImg {
   width: 30%;
 }
 .middleContent .blocksImg img {
   width: 100%;
+  border-radius: 20px;
 }
 .middleContent .howItWorks {
   width: 60%;
+}
+.middleContent .howItWorks h3 {
+  text-align: center;
+}
+.middleContent .howItWorks p {
+  padding-top: 2%;
+  line-height: 1.5;
 }
