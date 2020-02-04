@@ -158,6 +158,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  background-color: #DDDCDB;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -177,8 +180,28 @@ p {
   font-family: 'Bebas Neue', cursive;
   color: black;
 }
-.headerImg {
+header .headerImg {
   width: 100%;
-  height: 55vh;
+  height: 40vh;
   border-radius: 20px;
+}
+header h3 {
+  padding-top: 3%;
+}
+header p {
+  padding-top: 1%;
+}
+.middleContent {
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.middleContent .blocksImg {
+  width: 30%;
+}
+.middleContent .blocksImg img {
+  width: 100%;
+}
+.middleContent .howItWorks {
+  width: 60%;
 }
