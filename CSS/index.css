@@ -185,9 +185,13 @@ body {
   font-size: 2.5rem;
   font-family: 'Bebas Neue', cursive;
   color: #4E0505;
+  letter-spacing: 2px;
 }
 .navbar nav #signIn {
-  border: 1px solid red;
+  color: #605B5B;
+}
+.navbar nav #signIn:hover {
+  -webkit-text-stroke: 1px #605B5B;
 }
 header .headerImg {
   width: 100%;
@@ -238,13 +242,26 @@ header p {
   border-radius: 5px;
   background: #605B5B;
   color: #EDECEC;
-  width: 8%;
+  width: 13%;
   padding: 1% 2%;
   font-size: 2rem;
   margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  text-align: center;
 }
 .lowerContent a .btn:hover {
   background: #EC0000;
   color: black;
+}
+footer {
+  background: #BEB8B8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 6%;
+  padding: 2%;
+}
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
 }

@@ -16,9 +16,15 @@
             font-size: 2.5rem;
             font-family: @heading-font;
             color: @heading-color;
+            letter-spacing: 2px;
         }
         #signIn {
-            border: 1px solid red;
+            color: @btn-color;
+            
+            &:hover {
+                -webkit-text-stroke: 1px @btn-color;
+            }
+            
         }
     }
 }
