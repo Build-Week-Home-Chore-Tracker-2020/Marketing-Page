@@ -254,6 +254,16 @@ header p {
   background: #EC0000;
   color: black;
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team .member {
+  margin-top: 5%;
+  border: 1px solid black;
+}
 footer {
   background: #BEB8B8;
   border-top-left-radius: 5px;
