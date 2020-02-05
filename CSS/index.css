@@ -232,42 +232,51 @@ header p {
 .middleContent {
   padding-top: 3%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 1000px) {
   .middleContent {
-    flex-direction: row-reverse;
-  }
-}
-@media (max-width: 800px) {
-  .middleContent {
     flex-direction: column;
   }
 }
-.middleContent .blocksImg {
-  width: 35%;
+.middleContent .imgs {
+  width: 30%;
 }
-@media (max-width: 1000px) {
-  .middleContent .blocksImg {
-    width: 45%;
-  }
-}
-@media (max-width: 1000px) and (max-width: 800px) {
-  .middleContent .blocksImg {
+@media (max-width: 800px) {
+  .middleContent .imgs {
     margin: 0 auto;
     padding-bottom: 5%;
     width: 60%;
   }
 }
-@media (max-width: 1000px) and (max-width: 800px) and (max-width: 500px) {
-  .middleContent .blocksImg {
+@media (max-width: 800px) and (max-width: 500px) {
+  .middleContent .imgs {
     width: 100%;
   }
 }
-.middleContent .blocksImg img {
+.middleContent .imgs img {
   width: 100%;
   border-radius: 20px;
+}
+.middleContent .imgs #dishes {
+  padding-top: 5%;
+}
+@media (max-width: 1000px) {
+  .middleContent .imgs #dishes {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .middleContent .imgs {
+    width: 50%;
+    display: flex;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  .middleContent .imgs {
+    width: 100%;
+  }
 }
 .middleContent .howItWorks {
   width: 50%;
@@ -280,6 +289,7 @@ header p {
 .middleContent .howItWorks h3 {
   text-align: center;
   margin-bottom: 3%;
+  padding-top: 2%;
 }
 @media (max-width: 800px) {
   .middleContent .howItWorks h3 {
@@ -288,6 +298,11 @@ header p {
 }
 .middleContent .howItWorks p {
   padding-top: 2%;
+}
+@media (max-width: 1000px) {
+  .middleContent .howItWorks {
+    width: 100%;
+  }
 }
 .lowerContent h3 {
   padding-top: 4%;
