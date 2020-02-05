@@ -21,6 +21,9 @@
         font-family: @heading-font;
         color: @btn-color;
         letter-spacing: 2px;
+        &:hover {
+            -webkit-text-stroke: 1px @btn-color;
+        }
 
         @media @tablet {
           padding-bottom: 2%;
@@ -29,9 +32,7 @@
       #signIn {
         color: @heading-color;
 
-        &:hover {
-          -webkit-text-stroke: 1px @btn-color;
-        }
+        
       }
     }
     @media @tablet {

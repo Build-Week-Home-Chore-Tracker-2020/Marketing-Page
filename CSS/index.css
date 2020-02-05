@@ -197,6 +197,9 @@ body {
   color: #605B5B;
   letter-spacing: 2px;
 }
+.navbar nav a:hover {
+  -webkit-text-stroke: 1px #605B5B;
+}
 @media (max-width: 800px) {
   .navbar nav a {
     padding-bottom: 2%;
@@ -204,9 +207,6 @@ body {
 }
 .navbar nav #signIn {
   color: #4E0505;
-}
-.navbar nav #signIn:hover {
-  -webkit-text-stroke: 1px #605B5B;
 }
 @media (max-width: 800px) {
   .navbar {
