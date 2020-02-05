@@ -1,0 +1,34 @@
+//mixins
+
+.flexBox(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.center(@padding) {
+    padding-bottom: @padding;
+    text-align: center;
+}
+
+
+.button() {
+    border: 2px solid red;
+    border-radius: 5px;
+    background: @btn-color;
+    color: @bg-color;
+    padding: 1% 2%;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: @heading-font;
+    letter-spacing: 2px;
+    text-align: center;
+    &:hover {
+        background: @hover-color;
+        color: black;
+    }
+}
+
+.forms() {
+    width: 100%;
+    font-size: 2rem;
+}

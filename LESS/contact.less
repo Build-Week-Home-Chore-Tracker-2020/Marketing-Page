@@ -25,27 +25,20 @@ form {
             }
 
             input {
-                width: 100%;
-                font-size: 2rem;
+                .forms();
             }
             textarea {
-                width: 100%;
-                font-size: 2rem;
+                .forms();
             }
             a {
                 text-decoration: none;
-                color: @main-font-color;
-                font-size: 1.8rem;
-                background: @heading-color;
-                color: @bg-color;
-                padding: 15%;
-                border-radius: 5px;
-
-                &:hover {
-                    background: @main-font-color;
-                }
+                .button();
             }
         }
+        .btn {
+            width: 50%;
+        }
+        
     }
     @media @phone {
         width: 100%;

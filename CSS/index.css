@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #4F4B4B;
+  height: 100%;
 }
 h1,
 h2,
@@ -163,6 +164,7 @@ p {
   max-width: 80%;
   width: 100%;
   margin: 0 auto;
+  min-height: 100%;
 }
 @media (max-width: 800px) {
   .container {
@@ -174,8 +176,8 @@ body {
 }
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .navbar img {
   height: 8vh;
@@ -258,6 +260,7 @@ header p {
 .middleContent .imgs img {
   width: 100%;
   border-radius: 20px;
+  object-fit: contain;
 }
 .middleContent .imgs #dishes {
   padding-top: 5%;
@@ -320,13 +323,13 @@ header p {
   border-radius: 5px;
   background: #605B5B;
   color: #EDECEC;
-  width: 13%;
   padding: 1% 2%;
   font-size: 2rem;
   margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 2px;
   text-align: center;
+  width: 13%;
 }
 .lowerContent a .btn:hover {
   background: #EC0000;
@@ -344,14 +347,14 @@ header p {
 }
 .team {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .team .member {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   border-radius: 20px;
 }
 .team .member:first-child {
@@ -361,9 +364,9 @@ header p {
   background-color: #BEB8B8;
 }
 .team .member h3 {
-  padding-top: 10%;
-  text-align: center;
   padding-bottom: 2%;
+  text-align: center;
+  padding-top: 10%;
 }
 .team .member img {
   width: 60%;
@@ -372,19 +375,19 @@ header p {
   border-radius: 20px;
 }
 .team .member h4 {
-  font-size: 2rem;
-  text-align: center;
   padding-bottom: 2%;
+  text-align: center;
+  font-size: 2rem;
 }
 .team .member a {
-  text-align: center;
   padding-bottom: 10%;
+  text-align: center;
   text-decoration: none;
   color: #4E0505;
   font-size: 1.5rem;
 }
 .team .member a:hover {
-  color: white;
+  color: #EDECEC;
 }
 footer {
   background: #BEB8B8;
@@ -432,15 +435,23 @@ form ul li textarea {
 }
 form ul li a {
   text-decoration: none;
-  color: #4F4B4B;
-  font-size: 1.8rem;
-  background: #4E0505;
-  color: #EDECEC;
-  padding: 15%;
+  border: 2px solid red;
   border-radius: 5px;
+  background: #605B5B;
+  color: #EDECEC;
+  padding: 1% 2%;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  text-align: center;
 }
 form ul li a:hover {
-  background: #4F4B4B;
+  background: #EC0000;
+  color: black;
+}
+form ul .btn {
+  width: 50%;
 }
 @media (max-width: 500px) {
   form {

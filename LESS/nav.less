@@ -1,15 +1,13 @@
 .navbar {
-  display: flex;
+  .flexBox(space-between);
   align-items: center;
-  justify-content: space-between;
 
     img {
       height: 8vh;
     }
     nav {
       width: 50%;
-      display: flex;
-      justify-content: space-around;
+      .flexBox(space-around);
 
       @media @tablet {
           width: 100%;

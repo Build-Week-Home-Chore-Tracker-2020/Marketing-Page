@@ -1,7 +1,6 @@
 .middleContent {
     padding-top: 3%;
-    display: flex;
-    justify-content: space-around;
+    .flexBox(space-around);
     align-items: center;
 
     @media @desktop {
@@ -27,6 +26,7 @@
         img {
             width: 100%;
             border-radius: 20px;
+            object-fit: contain;
         }
 
         #dishes {
@@ -90,21 +90,8 @@
         color: @main-font-color;
 
         .btn {
-            border: 2px solid red;
-            border-radius: 5px;
-            background: @btn-color;
-            color: @bg-color;
+            .button();
             width: 13%;
-            padding: 1% 2%;
-            font-size: 2rem;
-            margin: 0 auto;
-            font-family: @heading-font;
-            letter-spacing: 2px;
-            text-align: center;
-            &:hover {
-                background: @hover-color;
-                color: black;
-            }
 
             @media @tablet {
                 width: 20%;
