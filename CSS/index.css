@@ -281,11 +281,6 @@ header p {
 .middleContent .howItWorks {
   width: 50%;
 }
-@media (max-width: 800px) {
-  .middleContent .howItWorks {
-    width: 100%;
-  }
-}
 .middleContent .howItWorks h3 {
   text-align: center;
   margin-bottom: 3%;
@@ -441,7 +436,7 @@ form ul li a {
   font-size: 1.8rem;
   background: #4E0505;
   color: #EDECEC;
-  padding: 8%;
+  padding: 15%;
   border-radius: 5px;
 }
 form ul li a:hover {
