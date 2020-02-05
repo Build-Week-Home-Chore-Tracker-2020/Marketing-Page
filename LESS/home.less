@@ -3,8 +3,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+        flex-direction: column;
+    }
+
     .blocksImg {
         width: 35%;
+
+        @media @tablet {
+            margin: 0 auto;
+            padding-bottom: 5%;
+            width: 60%;
+        }
+
         img {
             width: 100%;
             border-radius: 20px;
@@ -13,9 +24,17 @@
     .howItWorks {
         width: 60%;
 
+        @media @tablet {
+            width: 100%;
+        }
+
         h3 {
             text-align: center;
             margin-bottom: 3%;
+
+            @media @tablet {
+                margin-bottom: 1%;
+            }
         }
 
         p {
@@ -28,6 +47,10 @@
 
     h3 {
         padding-top: 4%;
+
+        @media @tablet {
+            text-align: center;
+        }
     }
     p {
         padding-top: 1%;
@@ -53,6 +76,11 @@
                 background: @hover-color;
                 color: black;
             }
+
+            @media @tablet {
+                width: 20%;
+            }
+
         }
     }
     

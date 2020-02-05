@@ -1,0 +1,53 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .member {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px;
+
+        &:first-child {
+            margin-top: 5%;
+        }
+
+        &:hover {
+            background-color: @footer-color;
+        }
+
+        h3 {
+            padding-top: 10%;
+            text-align: center;
+            padding-bottom: 2%;
+        }
+
+        img {
+            width: 60%;
+            margin: 0 auto;
+            padding-bottom: 2%;
+            border-radius: 20px;
+        }
+        
+        h4 {
+            font-size: 2rem;
+            text-align: center;
+            padding-bottom: 2%;
+        }
+
+        a {
+            text-align: center;
+            padding-bottom: 10%;
+            text-decoration: none;
+            color: @heading-color;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
