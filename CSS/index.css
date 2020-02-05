@@ -447,3 +447,8 @@ form ul li a {
 form ul li a:hover {
   background: #4F4B4B;
 }
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
