@@ -2,18 +2,32 @@
     padding-top: 3%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media @desktop {
+        flex-direction: row-reverse;
+    }
 
     @media @tablet {
         flex-direction: column;
     }
 
     .blocksImg {
-        width: 35%;
+        width: 40%;
 
-        @media @tablet {
-            margin: 0 auto;
-            padding-bottom: 5%;
-            width: 60%;
+        @media @desktop {
+            width: 45%;
+
+            @media @tablet {
+                margin: 0 auto;
+                padding-bottom: 5%;
+                width: 60%;
+    
+                @media @phone {
+                    width: 100%;
+                }
+            }
+
         }
 
         img {
@@ -22,7 +36,7 @@
         }
     }
     .howItWorks {
-        width: 60%;
+        width: 50%;
 
         @media @tablet {
             width: 100%;
@@ -79,6 +93,10 @@
 
             @media @tablet {
                 width: 20%;
+
+                @media @phone {
+                    width: 30%;
+                }
             }
 
         }

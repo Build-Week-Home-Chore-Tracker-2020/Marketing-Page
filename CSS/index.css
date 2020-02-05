@@ -156,11 +156,11 @@ h3 {
 }
 p {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.5;
   font-family: 'Ubuntu', sans-serif;
 }
 .container {
-  max-width: 70%;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
 }
@@ -185,11 +185,16 @@ body {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .navbar nav {
+    width: 100%;
+  }
+}
 .navbar nav a {
   text-decoration: none;
   font-size: 2.5rem;
   font-family: 'Bebas Neue', cursive;
-  color: #4E0505;
+  color: #605B5B;
   letter-spacing: 2px;
 }
 @media (max-width: 800px) {
@@ -198,7 +203,7 @@ body {
   }
 }
 .navbar nav #signIn {
-  color: #605B5B;
+  color: #4E0505;
 }
 .navbar nav #signIn:hover {
   -webkit-text-stroke: 1px #605B5B;
@@ -213,6 +218,11 @@ header .headerImg {
   height: 40vh;
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  header .headerImg {
+    display: none;
+  }
+}
 header h1 {
   padding-top: 3%;
 }
@@ -223,6 +233,12 @@ header p {
   padding-top: 3%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .middleContent {
+    flex-direction: row-reverse;
+  }
 }
 @media (max-width: 800px) {
   .middleContent {
@@ -230,13 +246,23 @@ header p {
   }
 }
 .middleContent .blocksImg {
-  width: 35%;
+  width: 40%;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .middleContent .blocksImg {
+    width: 45%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 800px) {
   .middleContent .blocksImg {
     margin: 0 auto;
     padding-bottom: 5%;
     width: 60%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 800px) and (max-width: 500px) {
+  .middleContent .blocksImg {
+    width: 100%;
   }
 }
 .middleContent .blocksImg img {
@@ -244,7 +270,7 @@ header p {
   border-radius: 20px;
 }
 .middleContent .howItWorks {
-  width: 60%;
+  width: 50%;
 }
 @media (max-width: 800px) {
   .middleContent .howItWorks {
@@ -299,6 +325,11 @@ header p {
 @media (max-width: 800px) {
   .lowerContent a .btn {
     width: 20%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .lowerContent a .btn {
+    width: 30%;
   }
 }
 .team {
