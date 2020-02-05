@@ -246,7 +246,7 @@ header p {
   }
 }
 .middleContent .blocksImg {
-  width: 40%;
+  width: 35%;
 }
 @media (max-width: 1000px) {
   .middleContent .blocksImg {
@@ -386,4 +386,49 @@ footer {
 footer p {
   text-align: center;
   font-size: 1.2rem;
+}
+form {
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 30%;
+  height: 40vh;
+}
+form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 40vh;
+}
+form ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+}
+form ul li label {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  color: #4E0505;
+}
+form ul li input {
+  width: 100%;
+  font-size: 2rem;
+}
+form ul li textarea {
+  width: 100%;
+  font-size: 2rem;
+}
+form ul li a {
+  text-decoration: none;
+  color: #4F4B4B;
+  font-size: 1.8rem;
+  background: #4E0505;
+  color: #EDECEC;
+  padding: 8%;
+  border-radius: 5px;
+}
+form ul li a:hover {
+  background: #4F4B4B;
 }
