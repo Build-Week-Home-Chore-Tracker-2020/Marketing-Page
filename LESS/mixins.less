@@ -32,3 +32,11 @@
     width: 100%;
     font-size: 2rem;
 }
+
+.grow(@width, @height) {
+    transition-duration: 100ms;
+    &:hover {
+        transform: scale(@width, @height);
+    }
+    
+}
