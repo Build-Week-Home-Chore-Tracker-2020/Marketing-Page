@@ -181,7 +181,7 @@ body {
   align-items: center;
 }
 .navbar img {
-  height: 8vh;
+  width: 100%;
 }
 .navbar nav {
   width: 50%;
@@ -412,8 +412,7 @@ footer p {
 form {
   padding-top: 5%;
   margin: 0 auto;
-  width: 30%;
-  height: 40vh;
+  width: 50%;
 }
 form ul {
   display: flex;
@@ -421,13 +420,13 @@ form ul {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  height: 40vh;
 }
 form ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 10%;
+  width: 100%;
 }
 form ul li label {
   font-family: 'Bebas Neue', cursive;
@@ -472,5 +471,5 @@ form ul .btn:hover {
   }
 }
 #contactFooter {
-  margin-top: 65%;
+  margin-top: 30%;
 }
